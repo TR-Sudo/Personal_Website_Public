@@ -1,0 +1,28 @@
+
+nav>ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+    background-color: #48484A;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+nav>ul>li{
+    float: left;
+    width: 33.33%;    
+}
+nav>ul>li>a{    
+    font-family: "Raleway", sans-serif; 
+    display: block;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.5em;
+    padding: 8px;
+    text-decoration: none;
+    color: greenyellow;
+}
+nav>ul>li>a:hover{
+    transition: background-color 0.5s ease-in-out;
+    color: white;
+}

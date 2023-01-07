@@ -1,0 +1,108 @@
+.Parent{
+    display: flex;
+    flex-direction: row;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.Parent>.images{
+    width: 15%;
+    height: 30%;
+    margin-left: 5%;
+    margin-top: 3%;
+    border-radius: 3px;
+    background: #48484A;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.Parent>.images>p{
+    padding-left: 15px;
+}
+.Parent>.Mainbody{
+    background:  #FAF9F6;
+    border-radius: 3px;
+    width: 70%;
+    margin-left: 3%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+.Parent>.Mainbody>.AboutMe{
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 400px;
+    margin-top: -5%; 
+    margin-bottom: -5%;
+    padding-left: 2.5%;
+}
+
+.Parent>.Mainbody>.AboutMe>img{
+    max-width: 45%;
+    max-height: 45%;
+    border-radius: 50%;
+    display: none;
+}
+.Parent>.Mainbody>.AboutMe>.Text{
+    font-family: 'Circular Std', sans-serif; 
+    padding-left: 10px;
+    margin-right: 5%;
+    padding-right: 10px;
+    color: black;
+    width: fit-content;
+    height: auto;
+}
+
+.Parent>.Mainbody>.AboutMe>.Text>h1{
+    font-family: "Raleway", sans-serif;                                                
+    font-style: normal;
+    font-weight: 500;
+    color: green ;
+}
+.Parent>.Mainbody>.AboutMe>.Text>h4{
+    font-weight: 300; 
+    font-size: 18px;
+    margin-top: 0;
+}
+.Parent>.Mainbody>.AboutMe>.Text>.msg{
+    text-align: justify;
+    font-weight: 100; 
+    font-size: 1em;
+    margin-top: 0;
+}
+.Parent>.Mainbody>.AboutMe>.Text>.msg>a{
+    color:black;
+}
+.SectionSkill{
+    text-align: start;
+    font-family: "Raleway", sans-serif;  
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-left: 10px;
+    color: 	greenyellow ;
+}
+@media only screen and (max-width: 1300px) {
+    .Parent>.Mainbody{
+        width: 95%;
+        margin-top: 5%;
+        margin-left: 2.5%;
+    }
+    .Parent>.Mainbody>.AboutMe{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 2.5%;
+        margin: 0;
+        height: auto;
+    }
+    .Parent{
+        flex-direction: column;
+    }
+    .Parent>.images{
+        width: 95%;
+        margin-left: 2.5%;
+        text-align: center;
+    }
+    .Parent>.images>p>a{
+        padding-left: 20px;
+    }
+    .SectionSkill{
+        text-align: center;
+    }
+  }

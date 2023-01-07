@@ -1,0 +1,38 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Circular Std', sans-serif; 
+    color:  greenyellow;
+    background-color: #48484A ;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    margin-left: 2.5%;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    margin-right: 2.5%;
+    border-radius: 5px;
+}
+.card>h1{
+    font-family: "Raleway", sans-serif;                                                
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: -1%;
+}
+.card>p{   
+    font-size: 1em;
+    color: white;
+}
+.card>p2{   
+    font-size: 1em;
+    color: white;
+}
+.card>h1>.fa fa-external-link{
+    max-width: 10px;
+    max-height: 10px;
+}
+.card>h1>i:hover{
+    transform: scale(1.2); 
+    transition: all 0.5s ease-in;
+}

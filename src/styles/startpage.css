@@ -1,0 +1,106 @@
+.StartPage{
+    padding-left: 5%;
+    margin: 0;
+    position: relative;
+}
+.StartPage >.IntroText{
+    pointer-events: none;
+    font-family: "Andika", sans-serif;                                                
+    font-style: normal;
+    font-weight: 500;
+    font-size: 85px;
+    color: green ;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .05em solid red;
+    animation: 
+        typing 3.0s forwards,
+        blink 1s step-end infinite;
+    margin-bottom: -1%;
+}
+.StartPage >.IntroMsg{
+    font-family: "Raleway";
+    font-style: normal;
+    text-align: justify;
+    font-weight: 10;
+    font-size: 40px;
+    width: 93%;
+    color: black;
+}
+.StartPage>.Icons{
+    display: flex;
+    gap: 5px;
+    height:2.5vw;
+    width:2.5vw;
+}
+.StartPage>.Icons>.linkedinIcon:hover{
+  opacity:50%;
+  transform: scale(1.2); 
+  transition: all 0.5s ease-in;
+}
+.StartPage>.Icons>.GithubIcon:hover{
+  opacity:50%;
+  transform: scale(1.2); 
+  transition: all 0.5s ease-in;
+}
+.StartPage>.Icons>a>img{
+  height: 2.5vw;
+  width: 2.5vw;
+}
+.StartPage>.Icons>a>img:hover{
+  opacity:50%;
+  transform: scale(1.2); 
+  transition: all 0.5s ease-in;
+}
+.arrow {
+  position: absolute;
+  right: 6%;
+  display: none;
+  opacity: 0;
+  animation: MoveUpDown 1s linear infinite;
+  transition: opacity 0.5s ease-in-out;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 75px;
+  }
+  50% {
+    bottom: 100px;
+  }
+}
+@keyframes typing {
+    from {
+      width: 0
+    }
+    to{
+      width:490px;
+    }
+}
+
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    .StartPage>.Icons{
+      height:5vw;
+      width:5vw;
+    }
+    .StartPage>.Icons>a>img{
+      height: 5vw;
+      width: 5vw;
+    }
+    .StartPage{
+      height: 63vh;
+    }
+    .StartPage >.IntroText{
+      margin-top: 27vh;
+    }
+    .arrow{
+      display: block;
+      opacity: 1;
+    }
+  }
