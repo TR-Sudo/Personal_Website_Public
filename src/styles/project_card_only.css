@@ -1,0 +1,59 @@
+.ParentBody{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+.Parentbody>.images{
+    width: 70%;
+    margin-left: 16%;
+    text-align: center;
+    background-color: var(--skills-bg-color);
+}
+.Parentbody>.images>p>a{
+    padding: 15px;
+}
+.ParentBody>.images>p>a>img{
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.Parentbody>.Mainbody{
+    background:  var(--main-body-bg-color);
+    border-radius: 5px;
+    width: 70%;
+    margin-left: 16%;
+    margin-top: 2%;
+    margin-bottom: -4%;
+}
+.ParentBody>.images>.SectionSkill{
+    text-align: center;
+    font-family: var(--title-font);   
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-left: 10px;
+    color: 	var(--welcome-text-color);
+}
+@media only screen and (max-width: 1300px) {
+    .Parentbody>.images{
+        margin-left: 2.5%;
+        width: 95%;
+    }   
+    
+    .Parentbody>.images>p>a>img{
+        margin: 30px;
+        scale: 1.3;
+    }
+    .Parentbody>.images>p>a{
+        padding: 0px;
+    }
+    .Parentbody>.images>p{
+        margin-left: 0%;
+    }
+
+    .Parentbody>.Mainbody{
+        margin-left: 2.5%;
+        width: 95%;
+    }
+  }

@@ -1,11 +1,11 @@
-import Project_MainBody from '../components/project_only_mainbody';
+import { Deployed_Project_MainBody } from '../components/mainbody';
 import '../styles/mainbody.css';
 import '../styles/project_card_only.css';
 
 export default function ProjectBody(){
     return(
         <main>
-            <Project_MainBody/>
+            <Deployed_Project_MainBody/>
         </main>
     )
 }

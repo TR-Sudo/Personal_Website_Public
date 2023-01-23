@@ -1,28 +1,87 @@
-
-nav>ul{
+.accentColor{
+        background-color: red;
+        height: 5px;
+        width: 100%;
+}
+.navbar>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-weight: bold;
-    background-color: #48484A;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    gap: 30px;
+    padding-top: 15px;
+    padding-right: 15px;
 }
-nav>ul>li{
-    float: left;
-    width: 33.33%;    
+.navbar>ul>li{
+    float: right;
+    width: 150px;
+    background-color:rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
 }
-nav>ul>li>a{    
-    font-family: "Raleway", sans-serif; 
+nav>ul>li:hover{
+    transition: background-color 0.5s ease-in-out;
+    background-color:var(--hover-bg-color);
+}
+.navbar>ul>.deployed_nav{
+    display: none;
+    background-color:white;
+}
+.navbar>ul>.project_nav{
+    display: none;
+    background-color:white;
+}
+.navbar>ul>.deployed_nav:hover{
+    transition: background-color 0.5s ease-in-out;
+    background-color:red;
+}
+.navbar>ul>.project_nav:hover{
+    transition: background-color 0.5s ease-in-out;
+    background-color:red;
+}
+.navbar>ul>.project_nav>a{
+    color: black;
+}
+.navbar>ul>.deployed_nav>a{
+    color: black;
+}
+.navbar>ul>li>a{    
+    font-family:var(--title-font);
     display: block;
     text-align: center;
-    font-weight: 100;
-    font-size: 1.5em;
+    font-weight: 400 !important;
+    font-size: 1.3em;
     padding: 8px;
     text-decoration: none;
-    color: greenyellow;
+    color: var(--welcome-text-color);
 }
-nav>ul>li>a:hover{
+.navbar>ul>li>a:hover{
     transition: background-color 0.5s ease-in-out;
     color: white;
+}
+.navbar>.Logo{
+    float: left;
+    font-size: 75px;
+    padding: 0;
+    margin: 0;
+    margin-top: -0.5%;
+    padding-left: 15px;
+    color: yellow;
+    display: none;
+}
+.navbar>ul>.contact_button{
+    background-color:rgb(253, 62, 62);
+}
+.navbar>ul>.contact_button:hover{
+    transition: background-color 0.5s ease-in-out;
+    background-color: lightblue;
+}
+@media only screen and (max-width: 1300px) {
+    .navbar>ul>li>a{    
+        font-size: 1.5em;
+    }
 }

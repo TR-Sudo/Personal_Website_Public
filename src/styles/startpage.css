@@ -5,11 +5,10 @@
 }
 .StartPage >.IntroText{
     pointer-events: none;
-    font-family: "Andika", sans-serif;                                                
-    font-style: normal;
-    font-weight: 500;
-    font-size: 85px;
-    color: green ;
+    font-family: var(--title-font);       
+    font-weight: 500 !important;
+    font-size: 5em;
+    color: var(--welcome-text-color);
     overflow: hidden;
     white-space: nowrap;
     border-right: .05em solid red;
@@ -19,17 +18,17 @@
     margin-bottom: -1%;
 }
 .StartPage >.IntroMsg{
-    font-family: "Raleway";
-    font-style: normal;
+    font-family: var(--seconday-font);
     text-align: justify;
-    font-weight: 10;
-    font-size: 40px;
-    width: 93%;
-    color: black;
+    font-weight: 400 !important;
+    font-size: 35px;
+    width: 92%;
+    color: var(--secondary-text-color);
+    
 }
 .StartPage>.Icons{
     display: flex;
-    gap: 5px;
+    gap: 20px;
     height:2.5vw;
     width:2.5vw;
 }
@@ -54,27 +53,25 @@
 }
 .arrow {
   position: absolute;
-  right: 6%;
+  right: 48%;
   display: none;
+
   opacity: 0;
+  color: var(--secondary-text-color);
   animation: MoveUpDown 1s linear infinite;
   transition: opacity 0.5s ease-in-out;
 }
 @keyframes MoveUpDown {
   0%, 100% {
-    bottom: 75px;
+    bottom: 120px;
   }
   50% {
-    bottom: 100px;
+    bottom: 140px;
   }
 }
 @keyframes typing {
-    from {
-      width: 0
-    }
-    to{
-      width:490px;
-    }
+  0% { width: 0 }
+  100% { width: 100% }
 }
 
 @keyframes blink {
@@ -102,5 +99,8 @@
     .arrow{
       display: block;
       opacity: 1;
+    }
+    .StartPage >.IntroMsg{
+      color: #e8e8e8;
     }
   }

@@ -9,11 +9,12 @@ export default function Footer(){
     }
     return(
         <footer id="Contact">
-            <h1>@2022 Created Using React JS ( Email T.rashid489@gmail.com )</h1>
+            <h1>© 2022 Created Using React JS ( Email T.rashid489@gmail.com )</h1>
             <div className="iconfooter">
-                <img className="imgfooter" onClick={toLinkedin} src='../images/linkedinfooter.png' href="https://www.linkedin.com/in/talha-rashid-489tr/" alt="Linkedin"/>
-                <img className="imgfooter" onClick={toGithub} src='../images/githubfooter.png' href="https://github.com/TR-Sudo" alt="Github"/>
+                <img className="imgfooter" onClick={toLinkedin} src='../images/linkedin.png' href="https://www.linkedin.com/in/talha-rashid-489tr/" alt="Linkedin"/>
+                <img className="imgfooter" onClick={toGithub} src='../images/github.png' href="https://github.com/TR-Sudo" alt="Github"/>
             </div>
+            <h1>Talha Al Rashid</h1>
         </footer>
     )
 }
