@@ -78,8 +78,6 @@ form>.Content{
     text-align: center;
     border-radius: 10px;
     background-color: var(--secondary-color);
-    border: 2px solid green;
-
 }
 .Checkmark>h1{
     font-family: var(--title-font);
@@ -96,5 +94,17 @@ form>.Content{
         margin-left: 16%;
         position: absolute;
         top: 15%;   
+    }
+}
+
+@keyframes blinking{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
     }
 }

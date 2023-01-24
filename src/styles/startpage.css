@@ -7,7 +7,7 @@
     pointer-events: none;
     font-family: var(--title-font);       
     font-weight: 500 !important;
-    font-size: 5em;
+    font-size: 5em !important;
     color: var(--welcome-text-color);
     overflow: hidden;
     white-space: nowrap;
@@ -21,11 +21,23 @@
     font-family: var(--seconday-font);
     text-align: justify;
     font-weight: 400 !important;
-    font-size: 35px;
+    font-size: 35px !important;
     width: 92%;
     color: var(--secondary-text-color);
     
 }
+.StartPage>.IntroMsg>a{        
+    font-weight: 500 !important;
+    color: tomato;
+}
+.StartPage>.IntroMsg>a:hover{
+    color: lightblue;
+}
+.StartPage>.IntroMsg>.SDE{
+    font-weight: 500 !important;
+    color: tomato;
+}
+
 .StartPage>.Icons{
     display: flex;
     gap: 20px;

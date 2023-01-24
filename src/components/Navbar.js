@@ -5,13 +5,15 @@ export default function Nav(){
     const [display, setDisplay] = useState('block');
 
     function toggle() {
-        const deployed_nav = document.querySelector('nav>ul>.deployed_nav');
-        const project_nav = document.querySelector('nav>ul>.project_nav');
-        const controller_nav = document.querySelector('nav>ul>.controller_nav');
+        const deployed_nav = document.querySelector('.navbar>ul>.deployed_nav');
+        const project_nav = document.querySelector('.navbar>ul>.project_nav');
+        const controller_nav = document.querySelector('.navbar>ul>.controller_nav');
+        const home_nav = document.querySelector('.navbar>ul>li');
         if (display === 'block') {
             deployed_nav.style.display = 'block';
             project_nav.style.display = 'block';
             controller_nav.style.display = 'none';
+            home_nav.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
             setDisplay('none');
         } else {
             deployed_nav.style.display = 'none';

@@ -19,8 +19,8 @@
 .navbar>ul>li{
     float: right;
     width: 150px;
-    background-color:rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
+    background-color:white;
+    border-radius: 4px;
     cursor: pointer;
 }
 nav>ul>li:hover{
@@ -53,11 +53,11 @@ nav>ul>li:hover{
     font-family:var(--title-font);
     display: block;
     text-align: center;
-    font-weight: 400 !important;
-    font-size: 1.3em;
+    font-weight: 500 !important;
+    font-size: 1.1em;
     padding: 8px;
     text-decoration: none;
-    color: var(--welcome-text-color);
+    color: black;
 }
 .navbar>ul>li>a:hover{
     transition: background-color 0.5s ease-in-out;
@@ -80,7 +80,7 @@ nav>ul>li:hover{
     transition: background-color 0.5s ease-in-out;
     background-color: lightblue;
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 800px) {
     .navbar>ul>li>a{    
         font-size: 1.5em;
     }

@@ -31,7 +31,7 @@ export default function Intro(){
   return (
     <div className="StartPage">
       <h1 className="IntroText">Welcome 🖥️</h1>
-      <h1 className="IntroMsg">Hello, and welcome to my website! My name is Talha Rashid and I'm a software development engineer, and I'm glad you're here. If you have any questions, feel free to contact me. Take a look around and let me know what you think. I hope you enjoy your visit</h1>
+      <h1 className="IntroMsg">Hello, and welcome to my website! My name is <a>Talha Al Rashid</a> and I'm a <a className='SDE'>Software Development Engineer</a>, and I'm glad you're here. If you have any questions, feel free to contact me. Take a look around and let me know what you think. I hope you enjoy your visit</h1>
       <div className='Icons'>
           <a><img src='../images/resume.png' onClick={toResume} alt="Resume"></img></a>
           <img className='GithubIcon' onClick={toGithub} src='../images/github.png' href="https://github.com/TR-Sudo" alt="Github"/>

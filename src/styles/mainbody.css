@@ -63,7 +63,8 @@
     font-family: var(--title-font);            
     font-weight: 500 !important;
     color: tomato;
-    font-size: 40px;
+    font-size: 40px !important;
+    margin-bottom: 1%;
 }
 .Parent>.Mainbody>.AboutMe>.Text>.msg{
     text-align: justify;
@@ -78,7 +79,7 @@
 .SectionSkill{
     text-align: start;
     font-family: var(--title-font);   
-    font-size: 1.5em;
+    font-size: 1.5em !important;
     font-weight: 500;
     padding-left: 10px;
     color: 	var(--welcome-text-color);

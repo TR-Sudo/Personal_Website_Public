@@ -63,6 +63,7 @@
 }
 .card>.button{
     font-family:var(--title-font);
+    font-weight: 500;
     font-size: 1em;
     margin-left: 0.5%;
     margin-right: 0.5%;
@@ -99,7 +100,7 @@
 	}
 
 	70% {
-		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+		box-shadow: 0 0 0 5px rgba(0, 0, 0, 0);
 	}
 
 	100% {
