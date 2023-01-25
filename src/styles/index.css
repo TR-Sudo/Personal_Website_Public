@@ -12,7 +12,10 @@ body {
 }
 @font-face {
     font-family: 'Open Sans';
-    src: url('../../public/fonts_files/OpenSans-VariableFont_wdth\,wght.ttf') format('opentype');
+    src: url('../../public/fonts_files/OpenSans-VariableFont_wdth\,wght.woff2') format('woff2'),
+         url('../../public/fonts_files/OpenSans-VariableFont_wdth\,wght.woff') format('woff');
+    font-weight: 300 1000;
+
 }
 
 :root{

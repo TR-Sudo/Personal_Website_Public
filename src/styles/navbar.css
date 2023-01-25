@@ -13,7 +13,7 @@
     overflow: hidden;
     font-weight: bold;
     gap: 30px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-right: 15px;
 }
 .navbar>ul>li{
@@ -53,7 +53,7 @@ nav>ul>li:hover{
     font-family:var(--title-font);
     display: block;
     text-align: center;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     font-size: 1.1em;
     padding: 8px;
     text-decoration: none;
@@ -80,8 +80,23 @@ nav>ul>li:hover{
     transition: background-color 0.5s ease-in-out;
     background-color: lightblue;
 }
-@media only screen and (max-width: 800px) {
-    .navbar>ul>li>a{    
-        font-size: 1.5em;
+@media only screen and (max-width: 767px) and (min-width: 0px){
+    .navbar>ul{
+        gap:10px;
+        padding-right: 10px;
     }
+    .navbar>ul>li{
+        width: 20vw;
+        font-size: 0.6em;
+    }
+    .navbar>ul>li>a{    
+        padding: 1vw 2vw;
+    }
+    .navbar>ul>.deployed_nav>a{
+        color: black;
+    }
+    .navbar>ul>.project_nav>a{
+        color: black;
+    }
+
 }

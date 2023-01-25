@@ -3,20 +3,25 @@
     flex-direction: row;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    margin:auto;
+    max-width: 17in;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 .Parent>.images{
-    width: 15%;
+    width: 17%;
     height: 30%;
-    margin-left: 5%;
     margin-top: 3%;
     border-radius: 5px;
     background-color: var(--skills-bg-color);
     position: -webkit-sticky; /* Safari */
     position: sticky;
+    padding-bottom: 20px;
     top: 30px;
 }
 .Parent>.images>p{
-    padding-left: 10%;
+    margin: auto;
+    max-width: 225px;
 }
 .Parent>.images>p>a>img{
     margin: 5px;
@@ -28,25 +33,18 @@
 .Parent>.Mainbody{
     background:  rgba(255, 255, 255, 0.95);
     border-radius: 5px;
-    width: 70%;
+    width: 80%;
     margin-left: 3%;
     margin-bottom: 3%;
 }
 .Parent>.Mainbody>.AboutMe{
     display: flex;
     align-items: center;
-    width: 95%;
+    width: 100%;
     height: 400px;
     margin-top: -4%; 
     margin-bottom: -4%;
     padding-left: 2.5%;
-}
-
-.Parent>.Mainbody>.AboutMe>img{
-    max-width: 45%;
-    max-height: 45%;
-    border-radius: 50%;
-    display: none;
 }
 .Parent>.Mainbody>.AboutMe>.Text{
     font-family: var(--title-font);      
@@ -61,14 +59,14 @@
 
 .Parent>.Mainbody>.AboutMe>.Text>h1{
     font-family: var(--title-font);            
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     color: tomato;
     font-size: 40px !important;
     margin-bottom: 1%;
 }
 .Parent>.Mainbody>.AboutMe>.Text>.msg{
     text-align: justify;
-    font-weight: 500 !important; 
+    font-weight: 400 !important; 
     font-size: 1em !important;
     margin-top: 0;
     color: black;
@@ -80,11 +78,21 @@
     text-align: start;
     font-family: var(--title-font);   
     font-size: 1.5em !important;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 10px;
     color: 	var(--welcome-text-color);
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1480px) and (min-width: 1300px){
+    .Parent>.images>p{
+        margin: auto;
+        max-width:170px;
+    }
+}
+@media only screen and (max-width: 1300px) and (min-width: 767px) {
+    .Parent{
+        padding-right: 0%;
+        padding-left: 0%;
+    }
     .Parent>.Mainbody{
         width: 95%;
         margin-top: 5%;
@@ -115,6 +123,7 @@
         padding: 0px;
     }
     .Parent>.images>p{
+        max-width: fit-content;
         padding-left: 0%;
     }
     
@@ -127,5 +136,59 @@
     }
     .Parent>.Mainbody>.AboutMe>.Text>.msg{
         font-size: 1.1em !important;
+    }
+  }
+  @media only screen and (max-width: 767px) and (min-width: 0px){
+    .Parent{
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+    .Parent>.Mainbody{
+        width: 95%;
+        margin-top: 5%;
+        margin-left: 2.5%;
+    }
+    .Parent>.Mainbody>.AboutMe{
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 2.5%;
+        margin: 0;
+        height: auto;
+    }
+    .Parent{
+        flex-direction: column;
+    }
+    .Parent>.images{
+        width: 95%;
+        margin-left: 2.5%;
+        text-align: center;
+        position: static;
+    }
+    .Parent>.images>p>a>img{
+        max-width: 6vw;
+        max-height: 6vw;
+    }
+    .Parent>.images>p>a{
+        padding: 0px;
+    }
+    .Parent>.images>p{
+        max-width: fit-content;
+        padding-left: 0%;
+    }
+
+    .Parent>.Mainbody>.AboutMe>img{
+        max-width: 0.5vw;
+    }
+    .SectionSkill{
+        text-align: center;
+        font-size: 1em !important;
+    }
+    .Parent>.Mainbody>.AboutMe>.Text>h1{
+        font-size: 1.7em !important;
+    }
+    .Parent>.Mainbody>.AboutMe>.Text>.msg{
+        text-align: center;
+        font-size: 1em !important;
     }
   }

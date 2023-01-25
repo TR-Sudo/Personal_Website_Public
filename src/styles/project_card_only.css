@@ -1,6 +1,8 @@
 .ParentBody{
     display: flex;
     flex-direction: column;
+    margin:auto;
+    max-width: 17in;
     margin-top: 3%;
     margin-bottom: 7%;
 }
@@ -11,7 +13,7 @@
     background-color: var(--skills-bg-color);
 }
 .Parentbody>.images>p>a{
-    padding: 15px;
+    padding: 10px;
 }
 .ParentBody>.images>p>a>img{
     padding: 5px;
@@ -31,11 +33,11 @@
     text-align: center;
     font-family: var(--title-font);   
     font-size: 1.5em;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 10px;
     color: 	var(--welcome-text-color);
 }
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1300px) and (min-width: 767px){
     .Parentbody>.images{
         margin-left: 2.5%;
         width: 95%;
@@ -57,3 +59,26 @@
         width: 95%;
     }
   }
+@media only screen and (max-width: 767px) and (min-width: 0px){
+        .Parentbody>.images{
+            margin-left: 2.5%;
+            width: 95%;
+        }   
+        
+        .Parentbody>.images>p>a>img{
+            max-width: 6vw;
+            max-height: 6vw;
+            margin: 5px;
+        }
+        .Parentbody>.images>p>a{
+            padding: 0px;
+        }
+        .Parentbody>.images>p{
+            margin-left: 0%;
+        }
+    
+        .Parentbody>.Mainbody{
+            margin-left: 2.5%;
+            width: 95%;
+        }
+    }

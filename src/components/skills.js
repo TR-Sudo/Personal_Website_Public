@@ -35,7 +35,7 @@ export default function Skills(){
                 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="../skills/CSS.png" width="36" height="36" alt="CSS3" /></a>
                 <a href="https://babeljs.io/" target="_blank" rel="noreferrer"><img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="36" height="36"/></a> 
                 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="36" height="36"/></a>
-                <a href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="../images/webpack.png" alt="react" width="36" height="36" background-color='black'/></a>
+                <a href="https://webpack.js.org/" target="_blank" rel="noreferrer"><img src="../images/webpack.png" alt="react" width="36" height="36"/></a>
             </p>                    
         </div>
     )

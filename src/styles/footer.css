@@ -29,3 +29,11 @@ footer>.iconfooter>.imgfooter:hover{
 .ContactPage>footer{
     position: fixed;
 }
+@media only screen and (max-width: 767px) and (min-width: 0px){
+    footer>h1{
+        font-size: 1em  !important;
+    }
+    footer>.iconfooter>.imgfooter{
+        max-width: 7vw;
+    }
+}
