@@ -145,6 +145,7 @@
       animation: typing-mobile 1.5s linear,
                 blink 1s infinite;
       width: fit-content;
+      padding-right: 5px;
     }
     .StartPage >.IntroMsg{
       font-size: 1.2em !important;

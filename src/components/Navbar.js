@@ -28,7 +28,7 @@ export default function Nav(){
             <div className='accentColor'></div>
             <nav className='navbar'>
                 <ul>
-                    <li><a href="Home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li className='controller_nav' onClick={() => { toggle() }} style={{ display: 'block' }}><a>Projects</a></li>
                     <li className='deployed_nav'><a href="Deployed">Deployed</a></li>
                     <li className='project_nav'><a href="Projects">All Projects</a></li>

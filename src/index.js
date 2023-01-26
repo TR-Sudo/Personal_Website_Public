@@ -18,7 +18,6 @@ root.render(
         <Route path='/' element={<div><Background/><Navbar/><Home/><Footer/></div>}/>
         <Route path='/projects' element={<div><Background/><Navbar/><ProjectBody/><Footer/></div>}/>
         <Route path='/Deployed' element={<div><Background/><Navbar/><Deployed_ProjectBody/><Footer/></div>}/>
-        <Route path='/Home' element={<div><Background/><Navbar/><Home/><Footer/></div>}/>
         <Route path='/Contact' element={<div><Background/><Navbar/><Contact_Body/></div>}/>
       </Routes>
   </BrowserRouter>

@@ -1,7 +1,5 @@
 import '../styles/startpage.css';
 import React, { useEffect } from "react"
-import {db} from '../firebase-config';
-import {collection, getDocs} from "firebase/firestore";
 
 
 export default function Intro(){  
