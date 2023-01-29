@@ -9,6 +9,7 @@ import Footer from './components/footer';
 import Navbar from './components/Navbar'
 import Contact_Body from './routes/contact';
 import Background from './components/background';
+import ReadMeBody from './components/readmefile';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,6 +20,7 @@ root.render(
         <Route path='/projects' element={<div><Background/><Navbar/><ProjectBody/><Footer/></div>}/>
         <Route path='/Deployed' element={<div><Background/><Navbar/><Deployed_ProjectBody/><Footer/></div>}/>
         <Route path='/Contact' element={<div><Background/><Navbar/><Contact_Body/></div>}/>
+        <Route path='/project/:repoName' element={<div><Background/><Navbar/><ReadMeBody/></div>}/>
       </Routes>
   </BrowserRouter>
   </React.StrictMode>

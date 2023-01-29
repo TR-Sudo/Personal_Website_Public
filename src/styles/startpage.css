@@ -141,7 +141,7 @@
     .StartPage >.IntroText{
       margin-top: 20vh;
       font-size: 2.5em !important;
-      border-right: 0.15em solid red;
+      border-right: 0.10em solid red;
       animation: typing-mobile 1.5s linear,
                 blink 1s infinite;
       width: fit-content;

@@ -32,7 +32,7 @@ export default function Project_MainBody(){
         <main className='ParentBody'>
             <Skills />
             <div className='Mainbody' data-aos="fade-up">
-            {project.map(project=><Card key={project.id} name={project.data.Name} description={project.data.Description} img={project.data.Img} Link={project.data.link} dependencies={project.data.dependencies} alive={project.data.running}/>)}
+            {project.map(project=><Card key={project.id} name={project.data.Name} description={project.data.Description} img={project.data.Img} Link={project.data.link} dependencies={project.data.dependencies} alive={project.data.running} repo={project.data.repo}/>)}
             </div>
                  
         </main>        

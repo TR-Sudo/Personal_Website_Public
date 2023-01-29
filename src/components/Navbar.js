@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import '../styles/navbar.css';
+import { Link } from 'react-router-dom'
 
 export default function Nav(){
     const [display, setDisplay] = useState('block');
@@ -30,9 +31,9 @@ export default function Nav(){
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li className='controller_nav' onClick={() => { toggle() }} style={{ display: 'block' }}><a>Projects</a></li>
-                    <li className='deployed_nav'><a href="Deployed">Deployed</a></li>
-                    <li className='project_nav'><a href="Projects">All Projects</a></li>
-                    <li className='contact_button'><a href="Contact">Contact</a></li>
+                    <li className='deployed_nav'><Link to="/Deployed">Deployed</Link></li>
+                    <li className='project_nav'><Link to="/Projects">All Projects</Link></li>
+                    <li className='contact_button'><Link to="/Contact">Contact</Link></li>
                 </ul>
             </nav>
         </div>
