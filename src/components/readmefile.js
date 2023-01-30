@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import '../styles/readme_body.css'
 import 'github-markdown-css/github-markdown-light.css'
 
+
 export default function ReadMeBody() {
   const {repoName} = useParams();
   const [readme, setReadme] = useState('');
@@ -23,10 +24,10 @@ export default function ReadMeBody() {
       .catch(error => {
         console.log(error);
       });
-  }, []);
+  }, [repoName]);
 
   return (
-    <div className='Readme_body'>
+    <div className='Readme_body' data-aos="fade-up">
         <ReactMarkdown children={readme} className='markdown-body'/>
     </div>
   );

@@ -48,7 +48,7 @@ form>.Content{
     flex-direction: row;
     gap: 10px;
     width: 100%;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .Contact_Body>form>.Message>p{
     font-family: var(--seconday-font);
