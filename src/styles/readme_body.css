@@ -11,6 +11,7 @@
     padding-right: 5%;
     padding-top: 3%;
     padding-bottom: 3%;
+    opacity: 0.95;
 }
 .markdown-body>p{
     font-family: var(--title-font);

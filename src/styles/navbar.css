@@ -1,5 +1,5 @@
 .accentColor{
-        background-color: red;
+        background-color: var(--accent-color);
         height: 5px;
         width: 100%;
 }

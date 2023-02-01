@@ -48,7 +48,7 @@ export default function MainBody(){
             <div className="AboutMe">
                 <div className="Text">
                     <h1>Talha Al Rashid</h1>
-                    <p className="msg">BS.c Computer Science (Hons) | Software Development | Back-End Developer | Machine Learning Developer | <a href="https://www.credly.com/badges/12220984-5d31-43f3-a949-1b9df0a57763/public_url">AWS Certified Developer (Certification) </a></p>
+                    <p className="msg">BS.c Computer Science (Hons) | Software Development Engineer | Adequate understanding of Machine Learning | <a href="https://www.credly.com/badges/12220984-5d31-43f3-a949-1b9df0a57763/public_url">AWS Certified Developer (Certification) </a></p>
                     {msg.map(msg=><p key={msg.id} className="msg">{msg.data.About_Me}</p>)}                    
                     {msg.map(msg=><p key={msg.id} className="msg">{msg.data.Courses}</p>)}
                 </div>
