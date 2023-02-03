@@ -8,7 +8,7 @@
     pointer-events: none;
     font-family: var(--title-font);       
     font-weight: 400 !important;
-    font-size: 5em !important;
+    font-size: 4em !important;
     color: var(--welcome-text-color);
     margin-bottom: -1%;
     overflow: hidden;
@@ -23,7 +23,7 @@
     font-family: var(--seconday-font);
     text-align: justify;
     font-weight: 400 !important;
-    font-size: 35px !important;
+    font-size: 2em !important;
     width: calc(100%-20px);
     color: black;
     background-color: rgba(255, 255, 255, 0.85);
@@ -88,7 +88,7 @@
 }
 @keyframes typing-desktop {
   0% { width: 0 }
-  100% { width: 370px }
+  100% { width: 300px }
 }
 
 @keyframes blink {

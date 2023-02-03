@@ -60,7 +60,7 @@
     font-family: var(--title-font);            
     font-weight: 400 !important;
     color: tomato;
-    font-size: 40px !important;
+    font-size: 2em !important;
     margin-bottom: 1%;
 }
 .Parent>.Mainbody>.AboutMe>.Text>.msg{
