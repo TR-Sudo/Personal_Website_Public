@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import '../styles/readme_body.css'
 import 'github-markdown-css/github-markdown-light.css';
 import 'aos/dist/aos.css';
+import BackToTop from './BackTopTop';
 
 
 export default function ReadMeBody() {
@@ -30,8 +31,11 @@ export default function ReadMeBody() {
   }, [repoName]);
 
   return (
-    <div className='Readme_body' data-aos="fade-up">
+    <div>
+      <div className='Readme_body' data-aos="fade-up">
         <ReactMarkdown children={readme} className='markdown-body'/>
+      </div>
+      <BackToTop/>
     </div>
   );
 }

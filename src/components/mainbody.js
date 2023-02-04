@@ -53,7 +53,9 @@ export default function MainBody(){
                     {msg.map(msg=><p key={msg.id} className="msg">{msg.data.Courses}</p>)}
                 </div>
             </div>
+            <div className="Projects">
             {project.map(project=><Card key={project.id} name={project.data.Name} description={project.data.Description} img={project.data.Img} Link={project.data.link} dependencies={project.data.dependencies} alive={project.data.running} repo={project.data.repo}/>)}
+            </div>
             </div>      
         </main>        
     )

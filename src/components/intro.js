@@ -1,6 +1,5 @@
 import '../styles/startpage.css';
-import React, { useEffect } from "react"
-
+import React, { useEffect } from "react";
 
 export default function Intro(){  
   function toLinkedin(){
@@ -35,7 +34,7 @@ export default function Intro(){
           <img className='GithubIcon' onClick={toGithub} src='../images/github.png' href="https://github.com/TR-Sudo" alt="Github"/>
           <img className="LinkedinIcon" onClick={toLinkedin} src='../images/linkedin.png' href="https://www.linkedin.com/in/talha-rashid-489tr/" alt="Linkedin"/>
       </div>
-      <div className='arrow'><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></div>
+      <div className='arrow'><i className="fa fa-angle-down fa-3x" aria-hidden="true"></i></div>
     </div>
   );
 }

@@ -149,6 +149,7 @@
         width: 95%;
         margin-top: 5%;
         margin-left: 2.5%;
+        margin-bottom: 5%;
     }
     .Parent>.Mainbody>.AboutMe{
         text-align: center;
@@ -196,5 +197,8 @@
     .Parent>.Mainbody>.AboutMe>.Text>.msg{
         text-align: center;
         font-size: 1em !important;
+    }
+    .Projects{
+        display: none;
     }
   }
