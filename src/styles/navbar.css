@@ -23,6 +23,12 @@
     border-radius: 4px;
     cursor: pointer;
 }
+#home{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    scale: 0.75;
+}
 nav>ul>li:hover{
     transition: background-color 0.5s ease-in-out;
     background-color:var(--hover-bg-color);
@@ -76,6 +82,9 @@ nav>ul>li:hover{
 .navbar>ul>.contact_button{
     background-color:rgb(253, 62, 62);
 }
+.navbar>ul>.contact_button>a{
+    color: white;
+}
 .navbar>ul>.contact_button:hover{
     transition: background-color 0.5s ease-in-out;
     background-color: lightblue;
@@ -97,6 +106,13 @@ nav>ul>li:hover{
     }
     .navbar>ul>.project_nav>a{
         color: black;
+    }
+    #home{
+        top: 15px;
+        scale:1;
+        left: 10px;
+        width: auto;
+        border-radius: 5px;
     }
 
 }

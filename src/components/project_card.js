@@ -18,7 +18,7 @@ export default function Card(props){
     }
     return(
         <div className="Card">
-                <h1>{props.alive && <Running />}{props.name.toUpperCase()} <i onClick={()=>{toGithub(props.Link)}}className="fa fa-external-link" /><i className='cursor'/></h1> 
+                <h1>{props.alive && <Running />}{props.name.toUpperCase()}</h1> 
                 { props.img && <div className="card-Image">
                     <img src={props.img} alt="Project Image"></img>
                 </div>}
@@ -46,7 +46,7 @@ export function Deployed_Card(props){
     }
     return(
         <div>{props.alive && (<div className="Card">
-                <h1><Running />{props.name.toUpperCase()} <i onClick={()=>{toGithub(props.Link)}}className="fa fa-external-link" /><i className='cursor'/></h1> 
+                <h1><Running />{props.name.toUpperCase()}</h1> 
                 { props.img && <div className="card-Image">
                     <img src={props.img} alt="Project Image"></img>
                 </div>}

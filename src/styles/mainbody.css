@@ -18,6 +18,9 @@
     position: sticky;
     padding-bottom: 20px;
     top: 30px;
+    background: -webkit-linear-gradient(to right, #232526, #414345);
+    background: linear-gradient(to right, #232526, #414345);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .Parent>.images>p{
     margin: auto;

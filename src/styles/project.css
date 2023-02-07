@@ -4,7 +4,6 @@
     text-align: center;
     font-family: var(--title-font);   
     color:  var(--welcome-text-color);
-    background-color:  rgba(0, 0, 0, 0.8);
     margin-left: 1%;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -12,6 +11,9 @@
     padding-right: 10px;
     margin-right: 1%;
     border-radius: 5px;
+    background: -webkit-linear-gradient(to right, #232526, #414345);
+    background: linear-gradient(to right, #232526, #414345);
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    
 }
 .card>h1{
     font-family:var(--title-font);                                                 
@@ -27,10 +29,6 @@
     font-weight: 400 !important;
     font-size: 1em !important;
     padding-top: 15px;
-}
-.card>h1>.fa fa-external-link{
-    max-width: 10px;
-    max-height: 10px;
 }
 .card>h1>i:hover{
     transform: scale(1.2); 
@@ -48,14 +46,14 @@
     width: auto;
     height:500px;
     border-radius: 5px;
-    background-color: #000000;
-    
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .card>.card-Image>img{
     margin-left: auto;
     margin-right: auto;
     max-height: 400px;
     max-width: 90%;
+    border-radius: 5px;
 }
 .monitorH1>i:hover{
     transform: scale(1.2); 
@@ -72,13 +70,14 @@
     height: 50px;
     background-color: rgba(255,255,255,1);
     border-width: 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .card>.button:hover{
     background-color: lightcoral;
     color: black;
     transition: all 0.5s ease-in;
+    
 }
-
 @keyframes typing {
     from {
       width: 0

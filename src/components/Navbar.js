@@ -14,7 +14,6 @@ export default function Nav(){
             deployed_nav.style.display = 'block';
             project_nav.style.display = 'block';
             controller_nav.style.display = 'none';
-            home_nav.style.backgroundColor = 'rgba(255, 255, 255, 0.5)';
             setDisplay('none');
         } else {
             deployed_nav.style.display = 'none';
@@ -29,7 +28,7 @@ export default function Nav(){
             <div className='accentColor'></div>
             <nav className='navbar'>
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li id="Home"><a href="/"><i class='fa fa-home fa-2x'></i></a></li>
                     <li className='controller_nav' onClick={() => { toggle() }} style={{ display: 'block' }}><a>Projects</a></li>
                     <li className='deployed_nav'><Link to="/Deployed">Deployed</Link></li>
                     <li className='project_nav'><Link to="/Projects">All Projects</Link></li>
