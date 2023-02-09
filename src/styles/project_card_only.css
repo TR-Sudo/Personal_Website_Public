@@ -22,7 +22,7 @@
     padding: 5px;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .Parentbody>.Mainbody{
     background:  var(--main-body-bg-color);
