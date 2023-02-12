@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     margin:auto;
-    max-width: 17in;
+    max-width: 16in;
     margin-top: 3%;
     margin-bottom: 7%;
 }
@@ -60,6 +60,9 @@
         margin-left: 2.5%;
         width: 95%;
     }
+    .ParentBody>.images>.SectionSkill{
+        color: black;
+    }
   }
 @media only screen and (max-width: 767px) and (min-width: 0px){
         .Parentbody>.images{
@@ -82,5 +85,8 @@
         .Parentbody>.Mainbody{
             margin-left: 2.5%;
             width: 95%;
+        }
+        .ParentBody>.images>.SectionSkill{
+            color: black;
         }
     }

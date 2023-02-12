@@ -1,5 +1,5 @@
 footer{
-    background-color: var(--secondary-bg-color);
+    background-color: #242526;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -12,12 +12,12 @@ footer>h1{
     font-family: var(--seconday-font);                                                
     font-weight: 400 !important;
     font-size: 1.5em;
-    color: lightgray;
+    color: white;
     margin: 0;
     padding-top: 10px;
 }
 footer>.iconfooter>.imgfooter{
-    max-width:30px;
+    max-width:40px;
     padding: 10px;
     border-radius: 100%;
 }

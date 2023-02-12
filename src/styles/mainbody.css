@@ -4,7 +4,7 @@
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
     margin:auto;
-    max-width: 17in;
+    max-width: 15.5in;
     padding-right: 5%;
     padding-left: 5%;
 }
@@ -130,11 +130,13 @@
     
     .SectionSkill{
         font-size: 24px;
-        background-color: tomato;
+        background-color: white;
+        color: black;
         width: 95%;
         margin-left: 2.5%;
         opacity: 0.90;
         border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
     .Parent>.Mainbody>.AboutMe>.Text>h1{
         font-size: 30px !important;
@@ -188,12 +190,14 @@
         max-width: 0.5vw;
     }
     .SectionSkill{
-        background-color: tomato;
+        background-color: white;
         width: 95%;
         margin-left: 2.5%;
         opacity: 0.90;
         border-radius: 5px;
         font-size: 1em !important;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     }
     .Parent>.Mainbody>.AboutMe>.Text>h1{
         font-size: 1.7em !important;
