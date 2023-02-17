@@ -27,8 +27,10 @@ body {
 	--seconday-font:  'Open Sans', sans-serif;
 	--welcome-text-color: #ffffff;
 	--secondary-text-color: #B0B3B8;
-	--project-bg-color: #242526;
+	--project-bg-color: linear-gradient(to right, #232526, #414345);
 	--accent-color: red;
+    --contact-button: rgb(253, 62, 62);
+    --skills-bg-color:linear-gradient(to right, #232526, #414345);
 }
 .circles{
     position: fixed;
@@ -143,4 +145,13 @@ body {
         border-radius: 50%;
     }
 
+}
+@media (prefers-color-scheme: light) {
+    :root{
+        --main-bg-color: #262421;
+        --accent-color: #7fa650;
+        --contact-button: #7fa650;
+        --skills-bg-color: rgb(67, 67, 67);
+        --project-bg-color: rgb(67, 67, 67);
+    }
 }

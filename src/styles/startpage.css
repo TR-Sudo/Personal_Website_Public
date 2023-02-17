@@ -1,19 +1,25 @@
 .StartPage{
     margin: auto;
-    max-width: 15.5in;
+    max-width: 14in;
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: 1%;
+    padding-top: 1%;
+    background-color: rgba(112, 112, 112,0.05);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .StartPage >.IntroText{
+    margin-top: 1%;
     pointer-events: none;
     font-family: var(--title-font);       
     font-weight: 400 !important;
-    font-size: 4em !important;
+    font-size: 3.5em !important;
     color: var(--welcome-text-color);
     margin-bottom: -1%;
     overflow: hidden;
     white-space: nowrap;
-    border-right: .05em solid red;
+    border-right: .05em solid var(--accent-color);
     animation: 
       typing-desktop 2s forwards,
       blink 1s infinite;
@@ -23,7 +29,7 @@
     font-family: var(--seconday-font);
     text-align: justify;
     font-weight: 400 !important;
-    font-size: 2em !important;
+    font-size: 1.7em !important;
     width: calc(100%-20px);
     color: black;
     background-color: rgba(255, 255, 255, 0.85);
@@ -46,27 +52,28 @@
 .StartPage>.Icons{
     display: flex;
     gap: 20px;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
 }
 .StartPage>.Icons>.linkedinIcon:hover{
-  opacity:50%;
-  transform: scale(1.2); 
-  transition: all 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in;
+  box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+  border-radius: 100%;
 }
 .StartPage>.Icons>.GithubIcon:hover{
-  opacity:50%;
-  transform: scale(1.2); 
-  transition: all 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in;
+  box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+  border-radius: 100%;
 }
 .StartPage>.Icons>a>img{
-  height: 50px;
-  width: 50px;
+  height: 45px;
+  width: 45px;
 }
 .StartPage>.Icons>a>img:hover{
-  opacity:50%;
-  transform: scale(1.2); 
-  transition: all 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in;
+  box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+  border-radius: 10px;
 }
 .arrow {
   position: absolute;
@@ -75,7 +82,7 @@
   display: none;
 
   opacity: 0;
-  color: var(--secondary-text-color);
+  color: white;
   animation: MoveUpDown 1s linear infinite;
   transition: opacity 0.5s ease-in-out;
 }
@@ -94,7 +101,7 @@
   color: rgb(26, 26, 26);
   border: var(--secondary-text-color);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+  cursor: pointer;
 }
 
 .backtotop:hover{
@@ -115,7 +122,7 @@
 }
 @keyframes typing-desktop {
   0% { width: 0 }
-  100% { width: 300px }
+  100% { width: 260px }
 }
 
 @keyframes blink {
@@ -129,14 +136,17 @@
     .StartPage{
       padding-left: 5%;
       position: relative;
+      background-color: transparent;
+      margin-top: 0;
+      padding-top: 0;
     }
     .StartPage>.Icons{
-      height:5vw;
-      width:5vw;
+      height:4.5vw;
+      width:4.5vw;
     }
     .StartPage>.Icons>a>img{
-      height: 5vw;
-      width: 5vw;
+      height: 4.5vw;
+      width: 4.5vw;
     }
     .StartPage{
       height: 80vh;
@@ -161,6 +171,9 @@
     .StartPage{
       padding-left: 5vw;
       position: relative;
+      background-color: transparent;
+      margin-top: 0;
+      padding-top: 0;
     }
     .StartPage>.Icons{
       height:10vw;

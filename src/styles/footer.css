@@ -10,21 +10,22 @@ footer{
 }
 footer>h1{
     font-family: var(--seconday-font);                                                
-    font-weight: 400 !important;
-    font-size: 1.5em;
-    color: white;
+    font-weight: 500 !important;
+    font-size: 1.3em;
+    color: rgb(206, 206, 206);
     margin: 0;
     padding-top: 10px;
 }
 footer>.iconfooter>.imgfooter{
-    max-width:40px;
-    padding: 10px;
+    max-width:35px;
+    margin: 10px;
     border-radius: 100%;
+    cursor: pointer;
 }
 footer>.iconfooter>.imgfooter:hover{
-    opacity:50%;
-    transform: scale(1.1); 
-    transition: all 0.5s ease-in;
+    transition: box-shadow 0.5s ease-in;
+    box-shadow: 0 0 10px 5px rgba(255,255,255,0.5);
+    border-radius: 100%;
 }
 .ContactPage>footer{
     position: fixed;
@@ -32,8 +33,10 @@ footer>.iconfooter>.imgfooter:hover{
 @media only screen and (max-width: 767px) and (min-width: 0px){
     footer>h1{
         font-size: 1em  !important;
+        padding-top: 10px;
     }
     footer>.iconfooter>.imgfooter{
         max-width: 7vw;
+        margin: 10px;
     }
 }
